@@ -1,0 +1,120 @@
+DAY 1 DATA QUALITY SUMMARY
+Mutual Fund Analytics Capstone Project
+
+Dataset Overview
+----------------
+
+1. 01_fund_master.csv
+- Shape: (40, 15)
+- No missing values.
+- launch_date is stored as object datatype and should be converted to datetime during preprocessing.
+- Contains AMFI code, scheme details, risk category, expense ratio, and fund manager information.
+
+2. 02_nav_history.csv
+- Shape: (46000, 3)
+- No missing values.
+- date column is stored as object datatype and should be converted to datetime.
+- Historical NAV data available for multiple schemes.
+
+3. 03_aum_by_fund_house.csv
+- Shape: (90, 5)
+- No missing values.
+- date column stored as object datatype.
+- Contains AUM and scheme count information by fund house.
+
+4. 04_monthly_sip_inflows.csv
+- Shape: (48, 6)
+- 12 missing values found in yoy_growth_pct.
+- Missing values likely correspond to months where YoY comparison is unavailable.
+- month column stored as object datatype.
+
+5. 05_category_inflows.csv
+- Shape: (144, 3)
+- No missing values.
+- month column stored as object datatype.
+
+6. 06_industry_folio_count.csv
+- Shape: (21, 6)
+- No missing values.
+- month column stored as object datatype.
+
+7. 07_scheme_performance.csv
+- Shape: (40, 19)
+- No missing values.
+- Performance metrics such as Alpha, Beta, Sharpe Ratio, Sortino Ratio, and Drawdown available.
+
+8. 08_investor_transactions.csv
+- Shape: (32778, 13)
+- No missing values.
+- transaction_date stored as object datatype.
+- Suitable for investor behavior and transaction analysis.
+
+9. 09_portfolio_holdings.csv
+- Shape: (322, 8)
+- No missing values.
+- portfolio_date stored as object datatype.
+- Contains sector allocation and stock holding details.
+
+10. 10_benchmark_indices.csv
+- Shape: (8050, 3)
+- No missing values.
+- date stored as object datatype.
+- Contains benchmark index closing values.
+
+Overall Findings
+----------------
+- All 10 datasets loaded successfully.
+- No corrupted files detected.
+- No duplicate structure issues observed during ingestion.
+- Most date-related columns are currently stored as object datatype and should be converted to datetime in preprocessing.
+- Only one dataset (04_monthly_sip_inflows.csv) contains missing values (12 records in yoy_growth_pct).
+- AMFI codes appear consistently across mutual fund-related datasets and will be validated further in the next step.
+- Datasets are ready for ETL, validation, and exploratory analysis.
+
+
+
+-----------------------
+Fund Master Exploration
+-----------------------
+Unique Fund Houses (10):
+SBI Mutual Fund
+HDFC Mutual Fund
+ICICI Prudential MF
+Nippon India MF
+Kotak Mahindra MF
+Axis Mutual Fund
+Aditya Birla Sun Life MF
+UTI Mutual Fund
+Mirae Asset MF
+DSP Mutual Fund
+
+Categories:
+Equity
+Debt
+
+Sub Categories:
+Large Cap
+Small Cap
+Gilt
+Mid Cap
+Short Duration
+Value
+Liquid
+Index/ETF
+Flexi Cap
+Index
+Large & Mid Cap
+ELSS
+
+Risk Categories:
+Moderate
+Very High
+Low
+High
+Moderately High
+
+AMFI Validation:
+- Fund Master Codes: 40
+- NAV History Codes: 40
+- Missing Codes: None
+- All AMFI codes validated successfully.
