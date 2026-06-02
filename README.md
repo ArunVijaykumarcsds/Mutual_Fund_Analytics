@@ -6,6 +6,12 @@ The project provides data exploration, performance analysis, risk analysis, and 
 
 ---
 
+## 🌐 Live Demo
+
+[🔗 Open Mutual Fund Analytics Dashboard](https://mutualfundanalytics-a5cjfcqbqf5bb9bjydutnb.streamlit.app/)
+
+---
+
 ## 🚀 Project Overview
 
 This project analyzes mutual fund datasets and generates actionable insights for investors.
