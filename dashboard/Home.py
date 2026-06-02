@@ -20,8 +20,9 @@ This project includes:
 - Recommendation Engine
 """)
 
+# Load data
 performance = pd.read_csv(
-    r"C:\Users\HP\Desktop\Mutual_Fund_Analytics\data\processed\performance_metrics.csv"
+    "data/processed/performance_metrics.csv"
 )
 
 col1, col2, col3 = st.columns(3)
@@ -44,4 +45,5 @@ with col3:
         round(performance["sharpe_ratio"].mean(), 2)
     )
 
+st.subheader("Performance Metrics Preview")
 st.dataframe(performance.head())

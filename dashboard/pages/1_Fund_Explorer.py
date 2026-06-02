@@ -107,11 +107,9 @@ with col2:
 # Display Data
 # --------------------------------------------------
 
-st.subheader("Fund Data")
-
 st.dataframe(
     filtered_df,
-    width="stretch"
+    use_container_width=True
 )
 
 # --------------------------------------------------
