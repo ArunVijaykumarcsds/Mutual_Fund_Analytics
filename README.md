@@ -1,14 +1,14 @@
-## 🌐 Live Demo
-
-[🔗 Open Mutual Fund Analytics Dashboard](https://mutualfundanalytics-a5cjfcqbqf5bb9bjydutnb.streamlit.app/)
-
----
-
 # 📈 Mutual Fund Analytics Dashboard
 
 An end-to-end Data Analytics and Recommendation System for Mutual Funds built using Python, Pandas, SQLite, Machine Learning, and Streamlit.
 
 The project provides data exploration, performance analysis, risk analysis, and personalized fund recommendations through an interactive dashboard.
+
+---
+
+## 🌐 Live Demo
+
+[🔗 Open Mutual Fund Analytics Dashboard](https://mutualfundanalytics-a5cjfcqbqf5bb9bjydutnb.streamlit.app/)
 
 ---
 
